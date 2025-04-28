@@ -1,29 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Определяет тип документа как HTML5 -->
+<html lang="en"> <!-- Начало HTML-документа с указанием языка (английский) -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap">
-    <link rel="stylesheet" href="style.css">
-    <title>Lottery Spin Wheel</title>
+    <meta charset="UTF-8"> <!-- Устанавливает кодировку документа на UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Указывает браузеру использовать режим совместимости с последними версиями IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Устанавливает параметры отображения для мобильных устройств -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"> <!-- Подключает шрифт Poppins из Google Fonts -->
+    <link rel="stylesheet" href="style.css"> <!-- Подключает внешний CSS-файл для стилизации страницы -->
+    <title>Lottery Spin Wheel</title> <!-- Устанавливает заголовок страницы, который отображается на вкладке браузера -->
 </head>
 <body>
 
-    <div class="wrapper">
-        <div class="container">
-            <canvas id="wheel"></canvas>
-            <button id="spin-btn">Spin</button>
-            <img src="spinner-arrow.svg" alt="">
+    <div class="wrapper"> <!-- Обертка для основного содержимого страницы -->
+        <div class="container"> <!-- Контейнер для элементов колеса и кнопки -->
+            <canvas id="wheel"></canvas> <!-- Элемент canvas для рисования колеса -->
+            <button id="spin-btn">Spin</button> <!-- Кнопка для запуска вращения колеса -->
+            <img src="spinner-arrow.svg" alt=""> <!-- Изображение стрелки для указания направления вращения -->
         </div>
-        <div id="final-value">
-            <p>Click on spin button to start</p>
+        <div id="final-value"> <!-- Блок для отображения результата вращения -->
+            <p>Click on spin button to start</p> <!-- Сообщение для пользователя о том, что нужно нажать кнопку для начала -->
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script> <!-- Подключает библиотеку Chart.js для работы с графиками -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script> <!-- Подключает плагин для отображения меток данных на графиках Chart.js -->
+    <script src="script.js"></script> <!-- Подключает внешний JavaScript-файл для логики вращения колеса -->
 
 </body>
 </html>
